@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import { TextField } from "@material-ui/core";
 
-const TextField = () => {
-  return (
-    <div>TextField</div>
-  )
-}
+const TextField = ({placeholder,onChange,startIcon,endIcon}) => {
+  return <div>TextField</div>;
+};
 
-export default TextField
+export default TextField;

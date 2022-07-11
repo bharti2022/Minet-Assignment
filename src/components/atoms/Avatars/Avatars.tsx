@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Avatars = () => {
+const Avatars = (iconSrc,color) => {
   return (
     <div>Avatars</div>
   )
