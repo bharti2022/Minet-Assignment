@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Grid } from "@material-ui/core";
 import {Icons} from "../../atoms/Icons/Icons";
 import Typography from "../../atoms/Typography/Typography";
@@ -41,3 +42,14 @@ const Watchlist = () => {
 };
 
 export default Watchlist;
+=======
+import React from 'react'
+
+const Watchlist = () => {
+  return (
+    <div>Watchlist</div>
+  )
+}
+
+export default Watchlist
+>>>>>>> master

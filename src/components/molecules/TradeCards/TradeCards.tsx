@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import Avatars from '../../atoms/Avatars/Avatars'
 import Icons from '../../atoms/Icons/Icons'
 import Typography from '../../atoms/Typography/Typography'
@@ -33,6 +34,12 @@ const TradeCards = (data) => {
              </Grid>
      </Grid>
    </>
+=======
+
+const TradeCards = () => {
+  return (
+    <div>TradeCards</div>
+>>>>>>> master
   )
 }
 
