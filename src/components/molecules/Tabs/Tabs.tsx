@@ -1,9 +1,8 @@
 import {Tabs,Tab} from '@material-ui/core'
 import { useState } from 'react';
 export type Props={
-    synopsis:string,
-    name:string,
-    author:string
+    panel1:string,
+    panel2:string,
 
 }
 
@@ -24,19 +23,17 @@ const Tabss =(props:Props)=>{
                         }}
                         
                       >
-                        <Tab label="Synopsis" value={0}></Tab>
-                        <Tab label="Who is it for?"></Tab>
-                        <Tab label="About the Author"></Tab>
+                        <Tab label={/*tab name 1 */}></Tab>
+                        <Tab label={/*tab name 2*/}></Tab>
+                        
                       </Tabs>
                       <TabPanel value={value} index={0}>
-                        {props.synopsis}
+                        {props.panel1}
                       </TabPanel>
                       <TabPanel value={value} index={1}>
-                        {props.name}
+                        {props.panel2}
                       </TabPanel>
-                      <TabPanel value={value} index={2}>
-                        {props.author}
-                      </TabPanel>
+                      
     </>
    )
 

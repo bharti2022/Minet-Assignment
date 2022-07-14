@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-no-undef */
-import React from "react";
 import { InputAdornment, TextField } from "@mui/material";
 
-const TextField = ({
+const CustomTextField = ({
   placeholder,
   handleChange,
   iconPosition,
@@ -27,4 +26,4 @@ const TextField = ({
   );
 };
 
-export default TextField;
+export default CustomTextField;
