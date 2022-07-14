@@ -1,5 +1,6 @@
-<<<<<<< HEAD
 import { Grid } from "@material-ui/core";
+import { useEffect, useState } from "react";
+
 import {Icons} from "../../atoms/Icons/Icons";
 import Typography from "../../atoms/Typography/Typography";
 import DiscoverAssetCard from "../../molecules/DiscoverAssetsCards/DiscoverAssetCard";
@@ -7,6 +8,15 @@ import IconWithLabel from "../../molecules/IconWithLabel/IconWithLabel";
 import MyPortfolioValue from "../MyPortfolioValue/MyPortfolioValue";
 
 const Watchlist = () => {
+const [data,setData]=useState([])
+  const getWishlist=()=>{
+    //get all data for wishlist
+
+  }
+  useEffect(()=>{
+    getWishlist()
+  })
+
   return (
     <>
       <Grid container>
@@ -42,14 +52,3 @@ const Watchlist = () => {
 };
 
 export default Watchlist;
-=======
-import React from 'react'
-
-const Watchlist = () => {
-  return (
-    <div>Watchlist</div>
-  )
-}
-
-export default Watchlist
->>>>>>> master

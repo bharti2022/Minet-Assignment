@@ -1,11 +1,19 @@
 /* eslint-disable array-callback-return */
-import React from 'react'
+import React, { useEffect } from 'react'
+
 import {Grid} from "@material-ui/core"
 import USDCoin from '../../molecules/USDCoin/USDCoin'
 import Typography from '../../atoms/Typography/Typography'
 import Transaction from '../../molecules/Transactions/Transaction'
 
-const USDWalletGrid = (data) => {
+const USDWalletGrid = (dataId) => {
+  const getAllHistory=(dataId)=>{
+    //get history by id
+  }
+  useEffect(()=>{
+    getAllHistory(dataId)
+  })
+
   return (
     <>
       <Grid container>

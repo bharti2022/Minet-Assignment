@@ -1,6 +1,7 @@
 import React from 'react'
 import Icons from '../../atoms/Icons/Icons'
 import Grid from '@material-ui/core'
+
 import { sideBarIconList } from '../../../Constants/constants'
 
 const SideMenuBar = () => {

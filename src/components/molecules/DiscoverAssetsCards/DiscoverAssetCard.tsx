@@ -4,7 +4,9 @@ import {Grid} from '@material-ui/core'
 import Avatars from '../../atoms/Avatars/Avatars'
 import Typography from '../../atoms/Typography/Typography'
 import Icons from '../../atoms/Icons/Icons'
+
 import Graph from '../Graph/Graph'
+
 
 const DiscoverAssetCard = (data) => {
   return (
@@ -37,6 +39,7 @@ const DiscoverAssetCard = (data) => {
 
          </Grid>
          <Grid item>
+
               <Graph graphData={data.graph}/>
             </Grid>
     </Grid>

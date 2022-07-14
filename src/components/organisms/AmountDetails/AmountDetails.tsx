@@ -3,6 +3,10 @@ import Grid from '@material-ui/core'
 import Icons from "../../atoms/Icons/Icons"
 
 export const AmountDetails = (data) => {
+  const updateData=(data)=>{
+           //update sell or buy data
+  }
+
   return (
     <>
       <div>
@@ -12,7 +16,8 @@ export const AmountDetails = (data) => {
               <Typography variant="sibtitle1">{"$"+data}</Typography>
           </Grid>
           <Grid item>
-            <Button> {"Sell max"}</Button>
+            {data.sell? <Button onclick={updateData(data)}> {"Sell max"}</Button>: <Button onclick={updateData(data)}> {"Buy max"}</Button>} 
+
           </Grid>
         </Grid>
         <Icons imgSrc={line}/>

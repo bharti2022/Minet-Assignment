@@ -1,8 +1,10 @@
 import {Tabs,Tab} from '@material-ui/core'
 import { useState } from 'react';
 export type Props={
+
     panel1:string,
     panel2:string,
+
 
 }
 
@@ -23,6 +25,7 @@ const Tabss =(props:Props)=>{
                         }}
                         
                       >
+
                         <Tab label={/*tab name 1 */}></Tab>
                         <Tab label={/*tab name 2*/}></Tab>
                         
@@ -49,4 +52,5 @@ function TabPanel(props) {
       </>
     );
   }
+
 export default Tabss

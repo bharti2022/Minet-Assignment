@@ -4,6 +4,10 @@ import Typography from '../../atoms/Typography/Typography'
 import TradeCards from '../../molecules/TradeCards/TradeCards'
 
 const TradesCardGrid = (data) => {
+  const markWishlist=()=>{
+    //mark card as wishlisted
+  }
+
   return (
     <>
     <Grid container direction='row'>
@@ -18,7 +22,8 @@ const TradesCardGrid = (data) => {
         <Grid container>
           {data.map(result=>{
            return <Grid item>
-              <TradeCards data={result} />
+              <TradeCards data={result} onclick={markWishlist} />
+
               </Grid>
           })}
 

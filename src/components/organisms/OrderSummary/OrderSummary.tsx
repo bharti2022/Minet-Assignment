@@ -1,10 +1,18 @@
-import React from "react";
+
 import Avatars from "../../atoms/Avatars/Avatars";
 import Button from "../../atoms/Buttons/Button";
 import Icons from "../../atoms/Icons/Icons";
 import Typography from "../../atoms/Typography/Typography";
 
 const OrderSummary = (data, selling) => {
+  const sellclick=()=>{
+     //uupdate sell
+  }
+  const buyclick=()=>{
+    //update buy//
+  }
+  
+
   return (
     <>
       <div>
@@ -36,7 +44,8 @@ const OrderSummary = (data, selling) => {
             <Typography variant="subtitle2">Deposit to</Typography>
           </Grid>
           <Grid item>
-            {selling ? <Button>BUY NOW</Button> : <Button>SELL NOW</Button>}
+            {selling ? <Button onclick={buyclick}>BUY NOW</Button> : <Button onclick={sellclick}>SELL NOW</Button>}
+
           </Grid>
         </Grid>
       </div>

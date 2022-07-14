@@ -1,6 +1,7 @@
 import React from "react";
 import Icons from "../../atoms/Icons/Icons";
 import Typography from "../../atoms/Typography/Typography";
+
 import Grid from '@mui/material'
 import Tabss from "../../molecules/Tabs/Tabs";
 import { timesTabs } from "../../../Constants/constants";
@@ -11,6 +12,7 @@ const MyPortfolioValue = (data: { icon: any; percent: string; money: string; gra
     <>
       {" "}
       <div>MyPortfolioValue</div>
+
       <Grid container>
           <Grid item>
                 <Typography >{"Total Investment"}</Typography>
@@ -23,7 +25,7 @@ const MyPortfolioValue = (data: { icon: any; percent: string; money: string; gra
                 <Typography >{data.money}</Typography>
           </Grid>
           <Grid item>
-             
+         
             
                       <Tabss data={timesTabs}/>
                {/* display diff time tabs */}
@@ -31,7 +33,7 @@ const MyPortfolioValue = (data: { icon: any; percent: string; money: string; gra
           </Grid>
           <Grid item>
              <Icons imgSrc={data.graph}/>
-             </Grid>
+
       </Grid>
     </>
   );
