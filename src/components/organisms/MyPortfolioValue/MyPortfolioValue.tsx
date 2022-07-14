@@ -2,12 +2,18 @@ import React from "react";
 import Icons from "../../atoms/Icons/Icons";
 import Typography from "../../atoms/Typography/Typography";
 
-const MyPortfolioValue = (data) => {
+import Grid from '@mui/material'
+import Tabss from "../../molecules/Tabs/Tabs";
+import { timesTabs } from "../../../Constants/constants";
+
+
+const MyPortfolioValue = (data: { icon: any; percent: string; money: string; graph: any; }) => {
   return (
     <>
       {" "}
       <div>MyPortfolioValue</div>
-      <Grig conatiner>
+
+      <Grid container>
           <Grid item>
                 <Typography >{"Total Investment"}</Typography>
           </Grid>
@@ -19,29 +25,16 @@ const MyPortfolioValue = (data) => {
                 <Typography >{data.money}</Typography>
           </Grid>
           <Grid item>
-             <Grid item>
-                      {data.time1}
-             </Grid>
-             <Grid item>
-             {data.time2}
-             </Grid>
-             <Grid item>
-             {data.time3}
-             </Grid>
-             <Grid item>
-             {data.time4}
-             </Grid>
-             <Grid item>
-             {data.time5}
-             </Grid>
-             <Grid item>
-             {data.time6}
-             </Grid>
+         
+            
+                      <Tabss data={timesTabs}/>
+               {/* display diff time tabs */}
+            
           </Grid>
           <Grid item>
              <Icons imgSrc={data.graph}/>
-             </Grid>
-      </Grig>
+
+      </Grid>
     </>
   );
 };

@@ -6,6 +6,7 @@ export const AmountDetails = (data) => {
   const updateData=(data)=>{
            //update sell or buy data
   }
+
   return (
     <>
       <div>
@@ -16,6 +17,7 @@ export const AmountDetails = (data) => {
           </Grid>
           <Grid item>
             {data.sell? <Button onclick={updateData(data)}> {"Sell max"}</Button>: <Button onclick={updateData(data)}> {"Buy max"}</Button>} 
+
           </Grid>
         </Grid>
         <Icons imgSrc={line}/>

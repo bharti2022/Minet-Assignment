@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+
 import Typography from '../../atoms/Typography/Typography'
 import {Grid} from '@material-ui/core'
 import CrypoCard from '../../molecules/CryptoCard/CrypoCard'
@@ -18,6 +19,7 @@ const WatchlistBar = () => {
    //mark card coin as seleected for sell or purchase
   }
   
+
   return (
     <>
      <Grid container>
@@ -32,6 +34,7 @@ const WatchlistBar = () => {
                   return (<>
                   <Grid item >
                     <CrypoCard data={result} onclick={markSelected()}/>
+
                   </Grid>
                   </>)
                 }

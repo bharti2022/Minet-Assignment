@@ -1,8 +1,30 @@
-import React from "react";
-import { TextField } from "@material-ui/core";
 
-const TextField = ({placeholder,onChange,startIcon,endIcon}) => {
-  return <div>TextField</div>;
+/* eslint-disable react/jsx-no-undef */
+import { InputAdornment, TextField } from "@mui/material";
+
+const CustomTextField = ({
+  placeholder,
+  handleChange,
+  iconPosition,
+  Icon,
+  variant,
+}) => {
+  return (
+    <TextField
+      placeholder={placeholder}
+      variant={variant}
+      onChange={() => {
+        handleChange();
+      }}
+      InputProps={{
+        startAdornment: (
+          <InputAdornment position={iconPosition}>
+            <Icon />
+          </InputAdornment>
+        ),
+      }}
+    ></TextField>
+  );
 };
 
-export default TextField;
+export default CustomTextField;

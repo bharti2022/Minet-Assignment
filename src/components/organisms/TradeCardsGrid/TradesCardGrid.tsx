@@ -7,6 +7,7 @@ const TradesCardGrid = (data) => {
   const markWishlist=()=>{
     //mark card as wishlisted
   }
+
   return (
     <>
     <Grid container direction='row'>
@@ -22,6 +23,7 @@ const TradesCardGrid = (data) => {
           {data.map(result=>{
            return <Grid item>
               <TradeCards data={result} onclick={markWishlist} />
+
               </Grid>
           })}
 

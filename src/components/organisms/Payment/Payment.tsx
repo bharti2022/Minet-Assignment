@@ -11,6 +11,7 @@ const Payment = (data,Buy) => {
     useEffect(()=>{
        
     },[])
+
   return (
     <>
     <Grid container></Grid>
@@ -28,6 +29,7 @@ const Payment = (data,Buy) => {
             </>:<>
             <Typography variant='body2'>{"Sell is completed, please check your balance in your crypto wallet"}</Typography>
             <Button onclick={updateData(data)}>{"SELL CRYPTO"}</Button>            <Button>{"GO TO USD COIN"}</Button>
+
 </>
     }
     </>

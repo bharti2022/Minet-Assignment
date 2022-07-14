@@ -1,9 +1,9 @@
-import React from 'react'
 
-const Avatars = (iconSrc,color) => {
-  return (
-    <div>Avatars</div>
-  )
-}
+import React from "react";
+import { Avatar } from "@material-ui/core";
 
-export default Avatars
+const Avatars = ({iconSrc, color}:{iconSrc:string, color:string}) => {
+  return <Avatar alt="icon" src={iconSrc} />;
+};
+
+export default Avatars;

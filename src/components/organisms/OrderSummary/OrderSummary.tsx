@@ -1,3 +1,4 @@
+
 import Avatars from "../../atoms/Avatars/Avatars";
 import Button from "../../atoms/Buttons/Button";
 import Icons from "../../atoms/Icons/Icons";
@@ -11,6 +12,7 @@ const OrderSummary = (data, selling) => {
     //update buy//
   }
   
+
   return (
     <>
       <div>
@@ -43,6 +45,7 @@ const OrderSummary = (data, selling) => {
           </Grid>
           <Grid item>
             {selling ? <Button onclick={buyclick}>BUY NOW</Button> : <Button onclick={sellclick}>SELL NOW</Button>}
+
           </Grid>
         </Grid>
       </div>

@@ -1,5 +1,6 @@
 /* eslint-disable array-callback-return */
 import React, { useEffect } from 'react'
+
 import {Grid} from "@material-ui/core"
 import USDCoin from '../../molecules/USDCoin/USDCoin'
 import Typography from '../../atoms/Typography/Typography'
@@ -12,6 +13,7 @@ const USDWalletGrid = (dataId) => {
   useEffect(()=>{
     getAllHistory(dataId)
   })
+
   return (
     <>
       <Grid container>

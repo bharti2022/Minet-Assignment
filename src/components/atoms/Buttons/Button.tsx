@@ -1,8 +1,9 @@
 import React from "react";
 
 
-const Button = ({variant,children,onclick}) => {
-  return <Button  variant={variant} onClick={onclick}>{children}</Button>;
+
+const Button = ({variant,children,handleClick}) => {
+  return <Button  variant={variant} onClick={handleClick}>{children}</Button>;
 };
 
 export default Button;

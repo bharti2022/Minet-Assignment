@@ -1,3 +1,4 @@
+
 /* eslint-disable react/jsx-no-undef */
 import {Grid} from '@material-ui/core'
 import Typography from '../../atoms/Typography/Typography'
@@ -28,6 +29,7 @@ const Footer = () => {
           </Grid>
       </Grid>
     </>
+
   )
 }
 
